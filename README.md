@@ -32,6 +32,6 @@ To get started with Job Genie, follow these steps:
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/your-username/job-genie.git
+[git clone https://github.com/your-username/job-genie.git](https://github.com/SubhamJoshi18/Job-Genie-Job-Portal-AI-powered-System.git)
+
 cd job-genie
