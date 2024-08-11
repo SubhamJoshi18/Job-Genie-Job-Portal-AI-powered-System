@@ -1,0 +1,32 @@
+{
+  "roles": [
+    {
+      "name": "admin",
+      "permissions": ["create_user", "read_user", "update_user", "delete_user"]
+    },
+    {
+      "name": "manager",
+      "permissions": ["create_employee", "read_employee", "update_employee"]
+    },
+    {
+      "name": "employee",
+      "permissions": ["read_jobs"]
+    },
+    {
+      "name": "hr",
+      "permissions": ["create_jobs", "read_jobs", "delete_jobs", "update_jobs"]
+    },
+    {
+      "name": "client",
+      "permissions": [
+        "view_jobs",
+        "apply_jobs",
+        "client_logout",
+        "view_profile",
+        "update_profile",
+        "activate_account",
+        "create_company"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* colors */
+  --color-text: #2d82ff;
+  --color-text-tertiary: #227000;
+  /* rgb value= 45,132,255 */
+}

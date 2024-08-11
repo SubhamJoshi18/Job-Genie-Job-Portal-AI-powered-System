@@ -1,0 +1,27 @@
+version: '3'
+services:
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      - POSTGRES_USER: postgres
+      - POSTGRES_PASSWORD: admin
+      - POSTGRES_DB: linkend
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data/:var/lib/postgresql/data
+
+  node_server:
+    build: .
+    ports:
+      - '4000:4000'
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - :/app
+    command: npm start
+
+volumes: postgres_data
